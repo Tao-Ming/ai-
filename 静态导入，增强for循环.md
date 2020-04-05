@@ -10,13 +10,18 @@ end
 ```
 
 ```ruby
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 /*增强for循环，简化迭代器的书写格式，底层还是使用了迭代器遍历
 ，因此在迭代时不能改变集合元素的个数。
   适用范围：如果是实现了Iterable接口的对象或者是数组对象
  都可以使用增强for循环。
+ 普通for循环可以没有遍历的目标，普通for循环可以没有
+ 
  增强for循环的格式：
  for（变量类型 变量名：遍历的目标） 
  * */
@@ -34,13 +39,23 @@ public class 增强for循环 {
 			
 		}*/
 		
-// 增强for循环解决
+/*增强for循环解决map循环，因为map没有实现Iterable接口，所以map不能直接使用增强for循环，但是
+		如果需要使用增强for循环需要使用collection的集合遍历*/
 		for(String item:set){
 			System.out.println(item);
+			HashMap<String, String> map=new HashMap<String,String>();
+			map.put("001", "张三");
+			Set<Map.Entry<String, String>> entrys=map.entrySet();
+			for(Map.Entry<String, String> entry :entrys){
+				System.out.println("键："+entry.getKey()+"值"+entry.getValue());
+				
+			}
 			
 		}
 	}
 
 }
+
+
+
 ```
-阿萨德
