@@ -59,3 +59,60 @@ public class 增强for循环 {
 
 
 ```
+```ruby
+import java.util.Iterator;
+
+class MyList implements Iterable<String>{
+	Object [] arr =new Object[10];
+	int index=0;
+	public void add(Object o)
+	{
+		arr[index++]=o;
+		
+	}
+	public  int size(){
+		return index;
+		
+	}
+	public Iterator<String> iterator(){
+//		匿名内部类
+		return new Iterator<String>() {
+			int cursor=0;
+			@Override
+			public boolean hasNext() {
+				
+				return index>cursor;
+			}
+
+			@Override
+			public String next() {
+				
+				return  (String)arr[cursor++];
+			}
+		};
+		
+		
+		
+	}
+	
+	
+	
+}
+//只要继承了Iterable接口就可以使用增强for循环
+public class aa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyList list=new MyList();
+		list.add("张三");
+		list.add("王五");
+		list.add("李四");
+		for(String item:list)
+		{
+			System.out.println(item);
+		}
+
+	}
+
+}
+```
