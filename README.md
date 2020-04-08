@@ -13,8 +13,8 @@
 * 项目
 1. 项目
 2. 项目
-![hi](http://img2.imgtn.bdimg.com/it/u=3206563297,3073686125&fm=11&gp=0.jpg)
-[链接文件](http://img0.imgtn.bdimg.com/it/u=2907023246,4243830446&fm=26&gp=0.jpg)
+![hi](https://raw.githubusercontent.com/Tao-Ming/image/master/Screenshot_20200408_121505_tv.danmaku.bili.jpg?token=AOEGCC2ZDKHRCJ4NFJQKMZC6RVJGQ)
+![链接文件](http://img0.imgtn.bdimg.com/it/u=2907023246,4243830446&fm=26&gp=0.jpg)
 
 
 *** 
