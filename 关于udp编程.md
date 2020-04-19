@@ -102,6 +102,11 @@ import java.net.SocketException;
 /*接收端
  * 建立udp服务
  * 在控制台上：使用包名加类名启动
+  *udp什么情况下会丢包呢？
+带宽不足会出现丢包
+cpu处理能力不足
+寄存器的容量为1kb
+局域网每秒有十几兆
  * */
 public class demo1 {
 
