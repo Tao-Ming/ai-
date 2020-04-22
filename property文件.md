@@ -58,7 +58,7 @@ public class demo1 {
  
     		property.load(new FileReader("D:\\persons.proporty"));
     		 // 遍历properties
-    		Set<Entry<Object,Object>> entrys=property.entrySet();
+    		Set<Entry<Object,Object>> entrys=property.entrySet(); 
      		for(Entry<Object,Object> entry:entrys){
      			System.out.println("键："+entry.getKey()+"值"+entry.getValue());
      			
